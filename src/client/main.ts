@@ -37,10 +37,11 @@ async function main() {
      * Interact with the program
     */
     console.log('Interact with program ..', programId.toBase58());
+    var inputData:number[] = [1, 2, 3, 4, 5];
     const instruction = new TransactionInstruction({
         keys: [{pubkey : triggerKeypair.publicKey, isSigner: true, isWritable: true}], 
         programId, 
-        data: Buffer.alloc(0),
+        data: Buffer.from(inputData),
     });
     await sendAndConfirmTransaction(
         connection,

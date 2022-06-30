@@ -15,5 +15,7 @@ fn process_instruction(
     _instruction_data: &[u8],
 ) -> ProgramResult {
     msg!("Hello, world! --- Rust program");
+    msg!("Calculate : {} + {} = {}", _instruction_data[0], _instruction_data[1], _instruction_data[0] + _instruction_data[1]);
+
     Ok(())
 }
