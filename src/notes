@@ -1,0 +1,5 @@
+cargo-build-bpf
+https://github.com/solana-labs/solana/issues/21053#issuecomment-1002747726
+solana program show --programs
+solana logs | grep "HfSDfrRMeWKF1qUbjsAwaM9kdZvdmUD7RuhtggD5GPDQ invoke" -A 3
+
